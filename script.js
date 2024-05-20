@@ -41,9 +41,6 @@ function handleMove(cellIndex) {
     board[cellIndex] = currentPlayer.marker;
   }
 
-  // Update the display of the board
-  //   renderBoard();
-
   // Check for a winning combination
   if (checkWin()) {
     gameStatusText.innerText = `Congratulations ${currentPlayer.name}! You won the game!`;
